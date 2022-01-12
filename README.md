@@ -1,38 +1,25 @@
-
 ## PANDAS:
 
-- reading the files:
-    - pd.read_csv(' ')
-- describe(), info()
-- Row-wise Filteration
-- Column-wise Filteration:
-    - [''], [['','',...]]
-- Row-wise & Column-wise Filteration:
-    - .loc[ r , c ]
-- to access particular rows:
-    - .index[[ , , ]]
-- Operations : > , >= , < , <= , == , != , and, not, nor:
-- importing numpy to deal with Null values
-- converting Unstructured into Structured data using DataFrame
-    - pd.DataFrame()
-- ranging for column values:
-    - .between()
-- Updating data (by calling corresponding rows and column):
-    - .loc[,] = 
-- to Count the column values:
-    - df["column_name"].value_counts()
-- to replace / update data:
-    - df["column_name"].replace(old,new)
-    - df["column_name"].map({'Yes':1,'No':0})
-- to Replace null value:
-    - df["column_name"].replace(np.nan,value)
-    - df["column_name"].fillna(value,inplace=True)
-- boolean outputs: isnull(), notnull(), isna()
-- Adding new data:
-    - new row , new Column
-- to Change the index designation:
-    - row : pd.DataFrame(data, index = [])
-    - column : data.column=[]
-- groupby() : mean, sum,...
-- Sorting:
-    - sorting rows based on column values
+    - reading the files
+    - describe(), info()
+    - Row-wise & Column-wise Filteration
+    - to access particular rows
+    - Operations : > , >= , < , <= , == , != , and, not, nor
+    - importing numpy to deal with Null values
+    - converting Unstructured into Structured data using DataFrame
+    - ranging for column values using .between()
+    - Updating data (by calling corresponding rows and column)
+    - to Count the column values
+    - to replace / update data:
+        - using replace(), map()
+    - to Replace null value:
+        - using replace(), fillna()
+    - boolean outputs: isnull(), notnull(), isna()
+    - Adding new data:
+        - new row , new Column
+    - to Change the index designation:
+        - row : pd.DataFrame(data, index = [])
+        - column : data.column=[]
+    - groupby() : mean, sum,...
+    - Sorting:
+        - sorting rows based on column values
